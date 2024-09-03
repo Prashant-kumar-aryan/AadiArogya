@@ -1,0 +1,59 @@
+.FloatingLogo {
+    position: fixed;
+    height: 10vh; /* Adjust the height of the logo */
+    bottom: 40px; /* Distance from the bottom of the screen */
+    right: 20px;  /* Distance from the right edge of the screen */
+    z-index: 999; /* Ensures the logo is on top of other elements */
+    filter: brightness(110%); /* Slightly brightens the logo */
+    animation: enlarge 1s linear infinite alternate; /* Apply animation */
+}
+
+@keyframes enlarge {
+    0% {
+        transform: scale(1);
+        /* Initial scale */
+    }
+
+    100% {
+        transform: scale(1.1);
+        /* Slightly enlarged scale */
+    }
+}
+
+.FloatingLogo {
+    transition: all 0.3s ease-in-out;
+}
+
+.FloatingLogo:hover {
+    transform: scale(1.1);
+    filter: brightness(150%);
+}
+
+.FloatingLogo-text {
+    position: fixed;
+    bottom: 15%;
+    right: 40px;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: grey;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    cursor: default;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.FloatingLogo-container:hover .FloatingLogo-text {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .FloatingLogo2 {
+        right: 25%;
+        z-index: 999;
+        filter: brightness(110%);
+    }
+}
