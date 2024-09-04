@@ -52,9 +52,9 @@ const heroProducts = [
   },
 ];
 
-const aboutAadiArogya = {
+const aboutAadiAyurved = {
   imgSrc: "https://via.placeholder.com/300",
-  text: "Aadi Arogya is committed to providing the best health solutions. Our products are carefully curated to ensure the highest quality and effectiveness.",
+  text: "Aadi Ayurved is committed to providing the best health solutions. Our products are carefully curated to ensure the highest quality and effectiveness.",
 };
 
 const reviews = [
@@ -211,19 +211,19 @@ const Home = () => {
           </div>
         </div>
       </section>
-      {/* About Aadi Arogya Section */}
+      {/* About Aadi Ayurved Section */}
       <section className="my-12 px-4">
         <h2 className="text-3xl font-bold mb-8 text-center">
-          About Aadi Arogya
+          About Aadi Ayurved
         </h2>
         <div className="flex flex-col md:flex-row items-center justify-center gap-6">
           <img
-            src={aboutAadiArogya.imgSrc}
-            alt="About Aadi Arogya"
+            src={aboutAadiAyurved.imgSrc}
+            alt="About Aadi Ayurved"
             className="w-full md:w-1/2 h-64 object-cover rounded-md"
           />
           <p className="text-gray-800 text-center md:text-left md:ml-6">
-            {aboutAadiArogya.text}
+            {aboutAadiAyurved.text}
           </p>
         </div>
       </section>

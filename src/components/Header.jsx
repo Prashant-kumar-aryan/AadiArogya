@@ -25,7 +25,7 @@ const Header = () => {
   return (
     <header className="bg-customGreen text-white p-4 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-2xl md:text-4xl font-extrabold">Aadi Arogya</h1>
+        <h1 className="text-2xl md:text-4xl font-extrabold">aadi ayurved</h1>
 
         {/* Navigation links for larger screens */}
         <nav className="hidden md:flex space-x-8 text-2xl">
